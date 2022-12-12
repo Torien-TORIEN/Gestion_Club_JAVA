@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="690.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.Controller.GestionSalleController">
+   <left>
+      <AnchorPane fx:id="GlobalPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0583D2;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="56.0" fitWidth="148.0" layoutX="26.0" layoutY="14.0">
+               <image>
+                  <Image url="@../Img/Logo_ENICarthage.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnGestEvent" layoutX="38.0" layoutY="104.0" mnemonicParsing="false" onAction="#gestionEvenement" prefHeight="26.0" prefWidth="124.0" text="Evenements" />
+            <Button fx:id="btnGestMat" layoutX="37.0" layoutY="168.0" mnemonicParsing="false" onAction="#gestionMateriel" prefHeight="25.0" prefWidth="125.0" text="Materiels" />
+            <Button fx:id="btnGestSal" layoutX="38.0" layoutY="223.0" mnemonicParsing="false" onAction="#gestionSalle" prefHeight="25.0" prefWidth="124.0" text="Salles" />
+            <Button fx:id="btnGestUser" layoutX="38.0" layoutY="273.0" mnemonicParsing="false" onAction="#gestionUtilisateur" prefHeight="25.0" prefWidth="122.0" text="Utilisateurs" />
+            <Button fx:id="btnGestClub" layoutX="38.0" layoutY="318.0" mnemonicParsing="false" onAction="#gestionClub" prefHeight="25.0" prefWidth="122.0" text="Clubs" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="485.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView layoutX="7.0" layoutY="121.0" prefHeight="86.0" prefWidth="470.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="id" />
+                  <TableColumn prefWidth="115.20001220703125" text="locale" />
+                  <TableColumn prefWidth="140.0" text="description" />
+                  <TableColumn prefWidth="139.99993896484375" text="action" />
+               </columns>
+            </TableView>
+            <Label layoutX="23.0" layoutY="34.0" text="Gestion des Utilisateurs" textFill="#0583d2">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="23.0" layoutY="86.0" mnemonicParsing="false" style="-fx-background-color: #0583D2;" text="Ajouter" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
