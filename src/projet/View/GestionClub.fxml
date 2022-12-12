@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="684.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="GlobalPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="684.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.Controller.GestionClubController">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0583D2;" BorderPane.alignment="CENTER">
          <children>
@@ -19,10 +19,11 @@
                   <Image url="@../Img/Logo_ENICarthage.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="38.0" layoutY="104.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="124.0" text="Evenements" />
-            <Button layoutX="37.0" layoutY="168.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Materiels" />
-            <Button layoutX="38.0" layoutY="223.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Salles" />
-            <Button layoutX="38.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Utilisateurs" />
+            <Button fx:id="btnGestEvent" layoutX="38.0" layoutY="104.0" mnemonicParsing="false" onAction="#gestionEvenement" prefHeight="26.0" prefWidth="124.0" text="Evenements" />
+            <Button fx:id="btnGestMat" layoutX="37.0" layoutY="168.0" mnemonicParsing="false" onAction="#gestionMateriel" prefHeight="25.0" prefWidth="125.0" text="Materiels" />
+            <Button fx:id="btnGestSal" layoutX="38.0" layoutY="223.0" mnemonicParsing="false" onAction="#gestionSalle" prefHeight="25.0" prefWidth="124.0" text="Salles" />
+            <Button fx:id="btnGestUser" layoutX="38.0" layoutY="276.0" mnemonicParsing="false" onAction="#gestionUtilisateur" prefHeight="25.0" prefWidth="122.0" text="Utilisateurs" />
+            <Button fx:id="btnGestClub" layoutX="37.0" layoutY="322.0" mnemonicParsing="false" onAction="#gestionClub" prefHeight="25.0" prefWidth="122.0" text="Clubs" />
          </children>
       </AnchorPane>
    </left>
@@ -43,7 +44,7 @@
                   <Font name="System Bold" size="19.0" />
                </font>
             </Label>
-            <Button layoutX="23.0" layoutY="86.0" mnemonicParsing="false" style="-fx-background-color: #0583D2;" text="Ajouter" />
+            <Button fx:id="btnAjouterClub" layoutX="23.0" layoutY="86.0" mnemonicParsing="false" onAction="#ajouterClub" style="-fx-background-color: #0583D2;" text="Ajouter" />
          </children>
       </AnchorPane>
    </right>

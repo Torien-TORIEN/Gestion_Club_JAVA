@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="BordePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-400" minWidth="-800" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.Controller.AdminController">
+<BorderPane fx:id="GlobalPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-400" minWidth="-800" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.Controller.ResponsableController">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0583D2;" BorderPane.alignment="CENTER">
          <children>
@@ -21,11 +21,10 @@
                   <Image url="@../Img/Logo_ENICarthage.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="btnGestEv" layoutX="38.0" layoutY="104.0" mnemonicParsing="false" onAction="#gestionEvenement" prefHeight="26.0" prefWidth="124.0" text="Evenements" />
-            <Button fx:id="btnGestMat" layoutX="37.0" layoutY="168.0" mnemonicParsing="false" onAction="#gestionMateriel" prefHeight="25.0" prefWidth="125.0" text="Materiels" />
-            <Button fx:id="btnGestSal" layoutX="38.0" layoutY="223.0" mnemonicParsing="false" onAction="#gestionSalle" prefHeight="25.0" prefWidth="124.0" text="Salles" />
-            <Button fx:id="btnGestUser" layoutX="38.0" layoutY="279.0" mnemonicParsing="false" onAction="#gestionUtilisateur" prefHeight="25.0" prefWidth="122.0" text="Utilisateurs" />
-            <Button fx:id="btnGestClub" layoutX="38.0" layoutY="326.0" mnemonicParsing="false" onAction="#gestionClub" prefHeight="25.0" prefWidth="122.0" text="Clubs" />
+            <Button layoutX="38.0" layoutY="104.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="124.0" text="Mes demandes" />
+            <Button layoutX="37.0" layoutY="168.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Ajouter  Demande" />
+            <Button layoutX="38.0" layoutY="223.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Salles" />
+            <Button layoutX="38.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Materiels" />
          </children>
       </AnchorPane>
    </left>
@@ -39,7 +38,7 @@
                     <MenuItem mnemonicParsing="false" text="Close" />
                   </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Ajouter">
+                <Menu mnemonicParsing="false" text="Edit">
                   <items>
                     <MenuItem mnemonicParsing="false" text="Delete" />
                   </items>

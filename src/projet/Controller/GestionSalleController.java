@@ -11,16 +11,15 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 
-public class GestionClubController implements Initializable {
-
-   @FXML
-    private BorderPane GlobalPane;
+public class GestionSalleController implements Initializable {
+   
     @FXML
-    private Button btnAjouterClub;
+    private AnchorPane GlobalPane;
     @FXML
     private Button btnGestClub;
     @FXML
@@ -31,17 +30,18 @@ public class GestionClubController implements Initializable {
     private Button btnGestSal;
     @FXML
     private Button btnGestUser;
-    
-    
-    //------------------------ METHODES ---------------------------------//
-    @FXML
-    void ajouterClub(ActionEvent event) {
-        System.out.println("Ajouter une salle !");
-    }
 
     @FXML
     void gestionClub(ActionEvent event) throws IOException {
         System.out.println("Gestion des Clubs !");
+        Stage logp = new Stage();
+        GlobalPane.getScene().getWindow().hide();
+        Parent rootA;
+        rootA = FXMLLoader.load(getClass().getResource("../View/GestionClub.fxml"));
+        Scene scene = new Scene(rootA);
+        logp.setScene(scene);
+        logp.show();
+        logp.setResizable(false);
     }
 
     @FXML
@@ -59,7 +59,7 @@ public class GestionClubController implements Initializable {
 
     @FXML
     void gestionMateriel(ActionEvent event) throws IOException {
-        System.out.println("Gestion des Evenements !");
+        System.out.println("Gestion des Materiels !");
         Stage logp = new Stage();
         GlobalPane.getScene().getWindow().hide();
         Parent rootA;
@@ -68,24 +68,17 @@ public class GestionClubController implements Initializable {
         logp.setScene(scene);
         logp.show();
         logp.setResizable(false);
+
     }
 
     @FXML
-    void gestionSalle(ActionEvent event) throws IOException {
-        System.out.println("Gestion des Evenements !");
-        Stage logp = new Stage();
-        GlobalPane.getScene().getWindow().hide();
-        Parent rootA;
-        rootA = FXMLLoader.load(getClass().getResource("../View/GestionSalle.fxml"));
-        Scene scene = new Scene(rootA);
-        logp.setScene(scene);
-        logp.show();
-        logp.setResizable(false);
+    void gestionSalle(ActionEvent event) {
+        System.out.println("Gestion des Salles !");
     }
 
     @FXML
     void gestionUtilisateur(ActionEvent event) throws IOException {
-        System.out.println("Gestion des Evenements !");
+        System.out.println("Gestion des Utilisateurs !");
         Stage logp = new Stage();
         GlobalPane.getScene().getWindow().hide();
         Parent rootA;
@@ -94,8 +87,8 @@ public class GestionClubController implements Initializable {
         logp.setScene(scene);
         logp.show();
         logp.setResizable(false);
-    }
 
+    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
