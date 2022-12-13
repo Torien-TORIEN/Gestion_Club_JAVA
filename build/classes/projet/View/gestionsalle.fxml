@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="690.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.Controller.GestionSalleController">
+<BorderPane fx:id="GlobalPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#refresh" prefHeight="406.0" prefWidth="690.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.Controller.GestionSalleController">
    <left>
-      <AnchorPane fx:id="GlobalPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0583D2;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0583D2;" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="56.0" fitWidth="148.0" layoutX="26.0" layoutY="14.0">
                <image>
@@ -28,14 +28,13 @@
       </AnchorPane>
    </left>
    <right>
-      <AnchorPane prefHeight="400.0" prefWidth="485.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="406.0" prefWidth="488.0" BorderPane.alignment="CENTER">
          <children>
-            <TableView layoutX="7.0" layoutY="121.0" prefHeight="86.0" prefWidth="470.0">
+            <TableView fx:id="table" layoutX="7.0" layoutY="121.0" prefHeight="174.0" prefWidth="472.0">
                <columns>
-                  <TableColumn prefWidth="75.0" text="id" />
-                  <TableColumn prefWidth="115.20001220703125" text="locale" />
-                  <TableColumn prefWidth="140.0" text="description" />
-                  <TableColumn prefWidth="139.99993896484375" text="action" />
+                  <TableColumn fx:id="NumeroCln" prefWidth="75.0" text="Numero" />
+                  <TableColumn fx:id="LocalCln" prefWidth="115.20001220703125" text="Locale" />
+                  <TableColumn fx:id="DesCln" prefWidth="285.0" text="Description" />
                </columns>
             </TableView>
             <Label layoutX="23.0" layoutY="34.0" text="Gestion de Salles" textFill="#0583d2">
@@ -43,7 +42,7 @@
                   <Font name="System Bold" size="19.0" />
                </font>
             </Label>
-            <Button layoutX="23.0" layoutY="86.0" mnemonicParsing="false" style="-fx-background-color: #0583D2;" text="Ajouter" />
+            <Button fx:id="btnAjout" layoutX="23.0" layoutY="86.0" mnemonicParsing="false" onAction="#Ajouter" style="-fx-background-color: #0583D2;" text="Ajouter" />
          </children>
       </AnchorPane>
    </right>

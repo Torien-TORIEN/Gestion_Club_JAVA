@@ -63,6 +63,7 @@
                   <Font name="System Bold" size="26.0" />
                </font>
             </Label>
+            <Label fx:id="labelError" layoutX="88.0" layoutY="187.0" prefHeight="17.0" prefWidth="212.0" textFill="#d70d0d" />
          </children>
       </AnchorPane>
    </right>

@@ -3,13 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/Gestion_Club_JAVA/src/projet/Controller/GestionClubController.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Gestion_Club_JAVA/src/projet/Controller/GestionSalleController.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/Gestion_Club_JAVA/src/projet/Controller/GestionMaterielController.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/Gestion_Club_JAVA/src/projet/Controller/AdminController.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/Gestion_Club_JAVA/src/projet/PROJET.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Gestion_Club_JAVA/src/projet/Controller/AjouterUtilisateurController.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/Gestion_Club_JAVA/src/projet/Controller/AjouterSalleController.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/Gestion_Club_JAVA/src/projet/Controller/GestionUtilisateurController.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/Gestion_Club_JAVA/src/projet/View/GestionUtilisateur.fxml</file>
         </group>
     </open-files>
 </project-private>
